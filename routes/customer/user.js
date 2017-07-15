@@ -141,8 +141,8 @@ exports.fetchCourses = function(req, callback) {
     var db = dbConfig.mongoDbConn;
 
     logger.info(TAG + " inside fetchCourses, input body: " + JSON.stringify(req.body))
-    console.log("req.session.customer: "+JSON.stringify(req.session.customer))
-    console.log("req.session: "+JSON.stringify(req.session))
+    //console.log("req.session.customer: "+JSON.stringify(req.session.customer))
+    //console.log("req.session: "+JSON.stringify(req.session))
     if(req.session.customer){
         var resJson = {
           "http_code": "200",
