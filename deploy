@@ -1,0 +1,8 @@
+-#!/bin/sh      
+ssh ubuntu@54.201.8.214 <<EOF        
+ cd /home/ubuntu/nodejsApp  
+ git pull       
+ npm install      
+ forever restart 3
+ exit       
+EOF
